@@ -21,6 +21,6 @@ confiance_random= log((1/6)/(5/6));
 % % 
 % %    -1.6094
 if max_confiance<confiance_random
-    flag=(confiance/confiance_random);
+    flag=(max_confiance/confiance_random);
 %     rajouter un poid sur le poid du flag pour éviter des aberrations
 end
