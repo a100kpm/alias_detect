@@ -13,6 +13,8 @@ function [TABLE_FLAG,Player_stats,list_match] = MyLittleGuardianV3(datamatch,Pla
 newMatch=datamatch;
 if ~isempty(find(list_match==newMatch.match_id,1))
     TABLE_FLAG=[];
+    disp('match already in list')
+    return
 else
     list_match=[list_match;newMatch.match_id];
     TABLE_FLAG=[];
@@ -207,7 +209,7 @@ for i=1:10
     
     %     RESULTAT
     TABLE_FLAG=[TABLE_FLAG ;player_id,match_id,flag_average_boot,flag_hero_boot,flag_hero_apm,flag_average_dagger,flag_hero_dagger,flag_average_glimmer,flag_hero_glimmer,flag_average_solar,flag_hero_solar,flag_average_bkb,flag_hero_bkb,flag_average_forcestaff,flag_hero_forcestaff,flag_hero_apm1,flag_hero_apm2,flag_hero_apm3,flag_hero_apm4,flag_hero_apm5,flag_hero_apm6,flag_hero_apm7,flag_hero_apm8,flag_average_actif,flag_hero_actif];
-    
+%                               1       2           3               4               5           6                       7               8                          9                    10              11              12          13          14                      15                      16          17              18              19          20              21              22              23              24              25                      
     
     % fin de zone de flag pour la fonction check_triche a implémenter
     
