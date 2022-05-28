@@ -75,7 +75,7 @@ match_id_list=find_new_match(conn,account_id_list);
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 % CALL FUNCTION TO ADD DATA OF THOSE NEW MATCHS
 match_id_list=[match_id_list;match_id_list_retry_add];
-% conn = database('dotaladder','shiba','FTShiBa26','PortNumber',5432,'Server','90.35.1.2','Vendor','PostgreSQL');
+% conn = database('dotaladder','shiba','FTShiBa26','PortNumber',5432,'Server','ip','Vendor','PostgreSQL');
 match_id_list_retry_add=add_data_match(conn,match_id_list);
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
