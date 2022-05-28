@@ -3,24 +3,24 @@ format long g
 % 
 % select(conn,"select pg_size_pretty(pg_database_size('dotaladder'))")
 % 
-% penser a changer les start_ val de dur a variable (pour le moment 0 ou 6 en général)
+% penser a changer les start_ val de dur a variable (pour le moment 0 ou 6 en gÃ©nÃ©ral)
 % penser a changer les derniers sprintf en num2str
-% penser a améliorer les "check" au erreurs du a un échec de la récup des
-% données via la database
+% penser a amÃ©liorer les "check" au erreurs du a un Ã©chec de la rÃ©cup des
+% donnÃ©es via la database
 conn = database('dotaladder','shiba','FTShiBa26','PortNumber',5432,'Server','ip','Vendor','PostgreSQL');
 conn.Message
 % % % % % % % 
 % pour save en csv writetable(data,'data_flag2.csv')
 % % % % % % 
 % penser a changer flag en flags dans toutes les fonctions ! (et check si
-% flags n'est pas déjà présent avant cela)
+% flags n'est pas dÃ©jÃ  prÃ©sent avant cela)
 % penser a rajouter une fonction pour track un nouveau joueur d'id specifique
 
 % penser a rajouter une fonction qui add automatiquement tout les joueurs en track
 % lorsque l'on add de nouveau match (optionnelle)
 
-% ne pas prendre les match d'apm sommé <500 (important pour tournoi, osef pour ladder)
-% et de durée de moins de 10 min (important both ladder et tournoi)
+% ne pas prendre les match d'apm sommÃ© <500 (important pour tournoi, osef pour ladder)
+% et de durÃ©e de moins de 10 min (important both ladder et tournoi)
 % dans la bdd
 
 % % % % 
