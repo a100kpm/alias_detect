@@ -1,5 +1,10 @@
 function [confiance,flag_hero_apm,new_variance] = gaussien_apm(apm_hero,apm,nbr_hero,variance_hero)
-
+apm_hero=double(apm_hero);
+apm=double(apm);
+nbr_hero=double(nbr_hero);
+variance_hero=double(variance_hero);
+apm_hero=round(apm_hero,10);
+apm=round(apm,10);
 %% créer une variance dynamique pour appliquer une gaussienne de proba
 %% apm est l'apm du match
 variance = variance_hero;
