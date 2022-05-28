@@ -1,6 +1,6 @@
 javaclasspath('C:\Program Files\MATLAB\R2018b\java\jarext\postgresql-42.2.6.jar')
 format long g
-conn = database('dotaladder','shiba','FTShiBa26','PortNumber',5432,'Server','90.35.1.2','Vendor','PostgreSQL');
+conn = database('dotaladder','shiba','FTShiBa26','PortNumber',5432,'Server','ip','Vendor','PostgreSQL');
 conn.Message
 
 % consider changing value from 4 to 9 (min 10 games)

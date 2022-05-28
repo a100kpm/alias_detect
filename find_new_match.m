@@ -22,7 +22,7 @@ for aa=1:length(account_id_list)
                 
             end
         end
-        oldest=time-31536000; % 365 jours d'écart
+        oldest=time-31536000; % 365 jours d'Ã©cart
         TktMatchTable(TktMatchTable.start_time<oldest,:)=[];
         %     DateLastCheck=datetime(TktMatchTable.start_time(1,1),'ConvertFrom','posixtime');
         %     datetime --> donne une date lisible
@@ -40,7 +40,7 @@ for aa=1:length(account_id_list)
 end
 match_id_list=unique(match_id_list);
 % need something to check the select worked properly !
-conn = database('dotaladder','shiba','FTShiBa26','PortNumber',5432,'Server','90.35.1.2','Vendor','PostgreSQL');
+conn = database('dotaladder','shiba','FTShiBa26','PortNumber',5432,'Server','ip','Vendor','PostgreSQL');
 conn.Message
 pause(5)
 % restart co
